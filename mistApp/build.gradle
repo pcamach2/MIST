@@ -1,0 +1,59 @@
+plugins {
+    id 'java'
+}
+
+group 'pcamach2'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('lib/controlsfx-8.40.10.jar')
+    implementation files('lib/jidefx-common-b128.jar')
+    implementation files('lib/jidefx-comparators-b128.jar')
+    implementation files('lib/jidefx-converters-b128.jar')
+    implementation files('lib/jidefx-decoration-b128.jar')
+    implementation files('lib/jidefx-fields-b128.jar')
+    implementation files('lib/jidefx-validation-b128.jar')
+    
+    // Optional: If you want to include sources and javadoc jars as well
+    implementation files('lib/jidefx-common-b128-sources.jar')
+    implementation files('lib/jidefx-common-b128-javadoc.jar')
+    implementation files('lib/jidefx-comparators-b128-sources.jar')
+    implementation files('lib/jidefx-comparators-b128-javadoc.jar')
+    implementation files('lib/jidefx-converters-b128-sources.jar')
+    implementation files('lib/jidefx-converters-b128-javadoc.jar')
+    implementation files('lib/jidefx-decoration-b128-sources.jar')
+    implementation files('lib/jidefx-decoration-b128-javadoc.jar')
+    implementation files('lib/jidefx-fields-b128-sources.jar')
+    implementation files('lib/jidefx-fields-b128-javadoc.jar')
+    implementation files('lib/jidefx-validation-b128-sources.jar')
+    implementation files('lib/jidefx-validation-b128-javadoc.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['src']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['test']
+        }
+        resources {
+            srcDirs = ['test']
+        }
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
