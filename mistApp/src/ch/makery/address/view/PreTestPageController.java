@@ -33,7 +33,7 @@ public class PreTestPageController {
     @FXML
     public void OnEnterPressed(KeyEvent ke){
 
-        if(ke.getCode() == KeyCode.ENTER){
+        if(ke.getCode() == KeyCode.EQUALS){
             this.mainApp.showTestPage();
         }
 
