@@ -20,6 +20,7 @@ jobs:
       run: chmod +x ./mistApp/gradlew
 
     - name: Build with Gradle
+      working-directory: ./mistApp
       run: ./mistApp/gradlew build
 
 
