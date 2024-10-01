@@ -5,7 +5,7 @@ plugins {
 group 'pcamach2'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = '1.8'
+sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
@@ -33,8 +33,8 @@ dependencies {
     implementation files('lib/jidefx-fields-b128-javadoc.jar')
     implementation files('lib/jidefx-validation-b128-sources.jar')
     implementation files('lib/jidefx-validation-b128-javadoc.jar')
-    implementation 'org.openjfx:javafx-controls:8.0.241'
-    implementation 'org.openjfx:javafx-fxml:8.0.241'
+    implementation 'org.openjfx:javafx-controls:17'
+    implementation 'org.openjfx:javafx-fxml:17'
 }
 
 sourceSets {
