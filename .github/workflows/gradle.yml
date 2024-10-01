@@ -30,7 +30,7 @@ jobs:
       run: ./gradlew jar
 
     - name: Copy JAR to base directory
-      run: cp ./mistApp/build/libs/*.jar $GITHUB_WORKSPACE/
+      run: cp ./mistApp/build/libs/*.jar ./mistApp
 
   dependency-submission:
 
