@@ -23,7 +23,7 @@ jobs:
 
     - name: Build with Gradle
       working-directory: ./mistApp
-      run: ./mistApp/gradlew build
+      run: ./gradlew build
 
 
   dependency-submission:
