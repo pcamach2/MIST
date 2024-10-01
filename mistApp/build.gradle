@@ -33,8 +33,8 @@ dependencies {
     implementation files('lib/jidefx-fields-b128-javadoc.jar')
     implementation files('lib/jidefx-validation-b128-sources.jar')
     implementation files('lib/jidefx-validation-b128-javadoc.jar')
-    implementation 'org.openjfx:javafx-controls:17'
-    implementation 'org.openjfx:javafx-fxml:17'
+    implementation 'org.openjfx:javafx-controls:8'
+    implementation 'org.openjfx:javafx-fxml:8'
 }
 
 sourceSets {
