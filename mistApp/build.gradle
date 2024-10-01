@@ -57,3 +57,15 @@ sourceSets {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
+// Task to create the jar file
+task buildJar(type: Jar) {
+    archiveBaseName.set('mist_app')
+    from sourceSets.main.output
+    include '**/*.class'
+    manifest {
+        attributes 'Main-Class': 'mistApp/bin/ch/makery/address/MainMISTApp.class' // Replace with your main class
+    }
+}
+
+build.dependsOn buildJar
