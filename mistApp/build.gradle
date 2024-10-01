@@ -41,15 +41,7 @@ sourceSets {
             srcDirs = ['src']
         }
         resources {
-            srcDirs = ['src']
-        }
-    }
-    test {
-        java {
-            srcDirs = ['test']
-        }
-        resources {
-            srcDirs = ['test']
+            srcDirs = ['resources']
         }
     }
 }
