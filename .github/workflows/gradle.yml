@@ -25,6 +25,12 @@ jobs:
       working-directory: ./mistApp
       run: ./gradlew build
 
+    - name: Create JAR file
+      working-directory: ./mistApp
+      run: ./gradlew jar
+
+    - name: Copy JAR to base directory
+      run: cp ./mistApp/build/libs/*.jar $GITHUB_WORKSPACE/
 
   dependency-submission:
 
@@ -34,7 +40,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 8
+    - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '17'
